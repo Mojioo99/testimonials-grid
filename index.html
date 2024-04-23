@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root {
+            --Light-gray: hsl(0, 0%, 81%);
+            --Light-grayish-blue: hsl(210, 46%, 95%);
+            --Moderate-violet: hsl(263, 55%, 52%);
+            --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+            --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+            --White: hsl(0, 0%, 100%);
+        }
+
+        body {
+            background-color: var(--Light-grayish-blue);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+       
+
+        .container {
+            width: 100%;
+            min-height: 650px;
+            display: flex;
+            
+            padding: 30px;
+            padding-inline: 8%;
+            border: none;
+            flex-wrap: wrap;
+
+        }
+
+        .top {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            padding: 15px;
+            border: none;
+            flex-wrap: wrap;
+        }
+
+        .quote1 {
+            width: 68%;
+            height: 100%;
+            border-radius: 7px;
+            padding: 20px;
+            padding-inline: 30px;
+        }
+
+        .quote3,
+        .quote2 {
+            width: 28%;
+            height: 100%;
+            border-radius: 7px;
+            padding: 25px;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bottom {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            padding: 15px;
+            border: none;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            height: 100%;
+            border: none;
+        }
+
+        .right {
+            width: 25%;
+            height: 100%;
+            padding: 15px;
+            border: none;
+        }
+
+        .quote3 {
+            height: 100%;
+            border-radius: 7px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            padding: 5px;
+            gap: 10%;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            border: 2px solid var(--Light-grayish-blue);
+            width: 20%;
+        }
+
+        .quote2 .profile,
+        .quote3 .profile {
+            width: 200px;
+            gap: 10px;
+        }
+
+        p {
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: var(--Light-gray);
+        }
+
+        h3 {
+            font-family: "Barlow Semi Condensed", sans-serif;
+            margin: 1%;
+        }
+
+        .quote3 {
+            width: 100%;
+        }
+
+        .top .quote1 {
+            background-color: var(--Moderate-violet) !important;
+            background: url(./images/bg-pattern-quotation.svg) no-repeat 80% 0%;
+            color: var(--White)
+        }
+
+        .top .quote2 {
+            background-color: var(--Very-dark-grayish-blue);
+            color: var(--White)
+        }
+
+        .bottom .quote1 {
+            background-color: var(--Very-dark-blackish-blue);
+            color: var(--White)
+        }
+
+        .bottom .quote2,
+        .quote3 {
+            background-color: var(--White);
+        }
+        p span{
+            font-weight: 600;
+            color: var(--White);
+        }
+        .bottom .quote2 .profile span ,.bottom .quote2 p:last-of-type,.quote3 p:last-of-type,.quote3 .profile span{
+            color: black;
+        }
+        .bottom .quote2 p:last-of-type ,.quote3 p:last-of-type{
+            opacity: 0.7;
+        }
+        .quote3 .profile span,.bottom .quote2 .profile span{
+            font-weight: 600;
+        }
+        @media screen and (max-width:500px) {
+            .quote1,.quote2,.quote3,.right,.left{
+                width: 100% !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <div class="quote1">
+                    <div class="profile">
+                        <img src="./images/image-daniel.jpg" alt="">
+                        <p><span>Daniel Clifford</span> <br>
+                            Verified Graduate
+                        </p>
+
+                    </div>
+                    <h3>
+                        I received a job offer mid-course, and the subjects I learned were current, if not more so,
+                        in the company I joined. I honestly feel I got every penny’s worth.
+                    </h3>
+                    <p>
+
+                        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+                        transition and have heard some people who had an amazing experience here. I signed up
+                        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                        The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup.
+                        ”</p>
+                </div>
+                <div class="quote2">
+                    <div class="profile">
+                        <img src="./images/image-jonathan.jpg" alt="">
+                        <p>
+                            <span>Jonathan Walters</span><br>
+                            Verified Graduate
+                        </p>
+                    </div>
+                    <h3>
+                        The team was very supportive and kept me motivated
+                    </h3>
+                    <p>
+                        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                        for a big company. This was one of the best investments I’ve made in myself. ”
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="quote2">
+                    <div class="profile">
+                        <img src="./images/image-jeanette.jpg" alt="">
+                        <p>
+                            <span>Jeanette Harmon</span><br>
+                            Verified Graduate
+                        </p>
+                    </div>
+                    <h3>
+                        An overall wonderful and rewarding experience
+                    </h3>
+                    <p>
+                        “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good
+                        living
+                        while doing something I love. ”
+                    </p>
+                </div>
+                <div class="quote1">
+                    <div class="profile">
+                        <img src="./images/image-patrick.jpg" alt="">
+                        <p><span>Patrick Abrams</span> <br>
+                            Verified Graduate
+                        </p>
+
+                    </div>
+                    <h3>
+                        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them
+                        and
+                        learning from their experiences was easy.
+                    </h3>
+                    <p>
+                        “ The staff seem genuinely concerned about my progress which I find really refreshing. The
+                        program
+                        gave me the confidence necessary to be able to go out in the world and present myself as a
+                        capable
+                        junior developer. The standard is above the rest. You will get the personal attention you need
+                        from
+                        an incredible community of smart and amazing people. ”
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="quote3">
+                <div class="profile">
+                    <img src="./images/image-jeanette.jpg" alt="">
+                    <p>
+                        <span>Kira Whittle</span><br>
+                        Verified Graduate
+                    </p>
+                </div>
+                <h3>
+                    Such a life-changing experience. Highly recommended!
+                </h3>
+                <p>
+                    “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                    professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                    student of theirs who can only say wonderful things about the program. The entire curriculum and
+                    staff
+                    did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile
+                    team
+                    project, in particular, was outstanding. It took my learning to the next level in a way that no
+                    tutorial
+                    could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+                    experience. It certainly helped me land a job as a full-stack developer after receiving multiple
+                    offers.
+                    100% recommend! ”
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
