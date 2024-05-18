@@ -4,3 +4,5 @@ Testimonials grid section
 
 
 https://timonials-grid-steel.vercel.app
+
+responsive testimonials using css flexbox
